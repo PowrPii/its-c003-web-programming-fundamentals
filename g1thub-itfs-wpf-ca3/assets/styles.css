@@ -1,0 +1,202 @@
+* {
+    cursor: crosshair;
+}
+
+body {
+    background-color: black;
+    font-family: monospace;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -2;
+}
+
+.cyborg-image {
+    background-image: url("../images/cyborg-image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 90vh;
+    top: 10vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: grayscale(100%);
+    position: absolute;
+    z-index: -1;
+}
+
+nav { 
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+}
+
+nav a {
+    color: white;
+    min-width: 250px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    color: rgb(31, 230, 77);
+}
+
+nav .learn-submenu {
+    height: 16vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    visibility: hidden;
+    top: 8vh;
+    left: 28.3vw;
+}
+
+nav .learn-dropdown:hover + .learn-submenu {
+    visibility: visible;
+}
+
+nav .learn-submenu:hover {
+    visibility: visible;
+}
+
+.banner {
+    width: 100%;
+    height: 90vh;
+}
+
+.home {
+    width: 100vh;
+    position: absolute;
+    top: 25%;
+    max-height: 50vh;
+    padding: 50px;
+}
+
+.home h1 {
+    font-size: 100px;
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #0fa,
+        0 0 20px #0fc,
+        0 0 50px #0fe,
+        0 0 100px #0ff;
+
+    animation: animate 4s infinite alternate;
+}
+
+#learn {
+    background-color: #0c0c0f;
+    margin: 30px 30px;
+    width: 90vw;
+    height: auto;
+    padding: 10px 50px;
+}
+
+#learn h1 {
+    font-size: 50px;
+}
+
+#learn p {
+    margin: 30px;
+    font-size: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@keyframes animate {
+    12%{
+        opacity: 0.9;
+    }
+    14%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.8;
+    }
+    27%{
+        opacity: 1;
+    }
+    42%{
+        opacity: 0.8;
+    }
+    44%{
+        opacity: 1;
+    }
+    45%{
+        opacity: 0.5;
+    }
+    47%{
+        opacity: 1;
+    }
+    48%{
+        opacity: 0.3;
+    }
+    49%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0.7;
+    }
+    92%{
+        opacity: 1;
+    }
+}
+  
+.flashcard-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width:100%;
+    
+}
+
+.flashcard {
+    border-radius: 25px;
+    width: 25%;
+    height: 50vh;
+    border: 3px solid rgb(31, 230, 77);
+    padding: 30px;
+}
+
+hr {
+    height: 1px;
+    background-color: rgb(31, 230, 77);
+    border: 0;
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+    margin: 20px 10px 60px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+footer:hover {
+    transition: 0.5s;
+    color: rgb(31, 230, 77);
+}
+
