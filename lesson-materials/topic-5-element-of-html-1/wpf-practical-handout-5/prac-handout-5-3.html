@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practical Handouts Question 3</title>
+    </head>
+    <body>
+        <h1>People's Sports Interest Survey</h1>
+        <form action="">
+                Name: <input type="text" name="name" id="name" placeholder="Enter name here..."><br>
+            <br>
+            Gender: <select name="gender" id="gender">
+                <option value="null" selected disabled>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+            <br>
+            Age : <input type="text" name="age" id="age" placeholder="Enter age here..."><br>
+            <br>
+            <h3>Survey Questions Starts Here</h3>
+            <p>Question 1: How often do you play sports?</p>
+            <input type="radio" name="often" id="question-1" value="often"> Often
+            <input type="radio" name="sometimes" id="question-1" value="Yesometimess"> Sometimes
+            <input type="radio" name="on-and-off" id="question-1" value="on-and-off"> On and Off
+            <input type="radio" name="never" id="question-1" value="never"> Never
+            <p>Question 2: Do you prefer to play sports indoor or outdoor?</p>
+            <input type="radio" name="indoor" id="question-2" value="indoor"> Indoor
+            <input type="radio" name="outdoor" id="question-2" value="outdoor"> Outdoor
+            <input type="radio" name="both" id="question-2" value="both"> Both
+            <p>Question 3: What are the sports you play?</p>
+            <textarea style="font-family: monospace;" name="question-3" id="question-3" cols="52" rows="26" placeholder="Enter the sport(s) you play here..."></textarea>
+            <p>Question 4: Do you prefer to play sports in a large group?</p>
+            <input type="radio" name="yes/no" id="yes/no" value="Yes"> Yes
+            <input type="radio" name="yes/no" id="yes/no" value="No"> No <br>
+            <p>Question 5: Will you be willing to purchase premium equipment or apperels for the sports you play?</p>
+            <input type="radio" name="yes/no" id="yes/no" value="Yes"> Yes
+            <input type="radio" name="yes/no" id="yes/no" value="No"> No <br>
+            <br>
+            <input type="submit" value="Submit Survey">
+        </form>
+    </body>
+</html>
