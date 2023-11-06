@@ -1,0 +1,44 @@
+main {
+    width: 100%;
+}
+
+#para3 {
+    font-size: 14px;
+    color: red;
+}
+
+p em {
+    color: blue;
+}
+
+h2::first-letter {
+    color: purple;
+}
+
+#outer_para::first-line {
+    color: red;
+}
+
+div[id="div2"] {
+    width: 350px;
+}
+
+body {
+    background-image: url("https://img.freepik.com/free-photo/metal-texture-with-dust-scratches-cracks-textured-backgrounds_1421-330.jpg?size=626&ext=jpg");
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:focus {
+    color: purple;
+}
+
+a:hover {
+    color: cyan;
+}

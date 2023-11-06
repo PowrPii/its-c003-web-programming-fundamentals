@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Lesson 8</title>
+        <style>
+            p {
+                font-size: 12px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            article p {
+                color: green;
+            }
+            article > p {
+                font-size: 14px;
+                color: green;
+            }
+            article section > h2 {
+                font-size: 20px;
+                color: blueviolet;
+                font-style: italic;
+            }
+            article + article {
+                background-color: lightgray;
+            }
+
+            .list1 {
+                font-size: 16px;
+                color: darkgray;
+            }
+
+            .list1 li:first-child {
+                color: darkred;
+                font-weight: bold;
+            }
+
+            .list1 li:last-child {
+                color: orange;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to WPF</h1>
+        <p>Paragraph 1...</p>
+        <article>
+            <h2>Article 1</h2>
+            <p>Para 1 in the article</p>
+            <p>Para 2 in the article</p>
+            <section>
+                <h2>Section heading</h2>
+                <p>Para inside section</p>
+            </section>
+        </article>
+        <article>
+            <p>Para in second article</p>
+            <ul class="list1">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </article>
+    </body>
+</html>
