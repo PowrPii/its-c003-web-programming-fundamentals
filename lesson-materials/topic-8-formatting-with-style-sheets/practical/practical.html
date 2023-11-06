@@ -4,23 +4,54 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CSS Lesson 8</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Zen+Antique&display=swap" rel="stylesheet">
         <style>
+            h1, h2, h3 {
+                color: darkblue;
+                font-family: 'Pacifico', cursive;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            body {
+                height: 100vh;
+                /* background-color: rgb(246, 236, 236) */
+                background-image: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699142400&semt=sph);
+                background-repeat: no-repeat;
+                /* background-position: left bottom; */
+                /* background-size: cover; */
+                background-attachment: fixed;
+
+            }
+
             p {
                 font-size: 12px;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
+
             article p {
-                color: green;
+                color: rgba(108, 255, 255, 0.81);
             }
+
             article > p {
                 font-size: 14px;
-                color: green;
+                color: #b12626;
             }
+
             article section > h2 {
                 font-size: 20px;
-                color: blue;
+                color: hsl(0, 79%, 23%);
                 font-style: italic;
             }
+
+            section > p {
+                line-height: 1.5em;
+            }
+            
             article + article {
                 background-color: lightgray;
             }
@@ -53,10 +84,12 @@
                 background-color: orange;
                 font-size: 1.2em;
             }
+            
             .link1:focus {
                 color: lightgreen ;
                 text-decoration: none;
             }
+
             .link1:active {
                 color: yellow;
             }
@@ -71,7 +104,9 @@
             <p>Para 2 in the article</p>
             <section>
                 <h2>Section heading</h2>
-                <p>Para inside section</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem sunt earum nam, tenetur voluptates mollitia officiis consectetur consequatur, itaque, fuga animi quam iusto magni voluptatem aperiam dolore! Iusto, voluptatibus iure. Excepturi nihil tempora laboriosam sit ea at minima suscipit cumque consectetur nobis, officia necessitatibus recusandae, doloribus atque. Error deserunt earum ex perspiciatis facilis non laborum velit sequi omnis, quo dignissimos perferendis, atque rem praesentium accusamus adipisci repellendus repudiandae consequuntur, provident enim? Inventore beatae perspiciatis ducimus sunt neque modi odio sapiente veniam deleniti laboriosam libero velit maiores voluptas fugiat, corporis et optio veritatis eum quisquam cumque illo totam. Minima, temporibus.
+                </p>
             </section>
         </article>
         <article>
