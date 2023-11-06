@@ -18,7 +18,7 @@
             }
             article section > h2 {
                 font-size: 20px;
-                color: blueviolet;
+                color: blue;
                 font-style: italic;
             }
             article + article {
@@ -39,11 +39,32 @@
                 color: orange;
                 text-decoration: underline;
             }
+
+            .link1:link {
+                color: deeppink;
+                text-decoration: none;
+            }
+
+            .link1:visited {
+                color: brown;
+            }
+
+            .link1:hover {
+                background-color: orange;
+                font-size: 1.2em;
+            }
+            .link1:focus {
+                color: lightgreen ;
+                text-decoration: none;
+            }
+            .link1:active {
+                color: yellow;
+            }
         </style>
     </head>
     <body>
         <h1>Welcome to WPF</h1>
-        <p>Paragraph 1...</p>
+        <p>Paragraph 1... <a href="https://www.sim.edu.sg" class="link1">Link to SIM website</a></p>
         <article>
             <h2>Article 1</h2>
             <p>Para 1 in the article</p>
