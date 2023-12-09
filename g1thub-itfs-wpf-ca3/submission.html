@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/submission.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Successful Submission</title>
+    </head>
+    <body>
+        <div class="background-image"></div>
+        <div class="cyborg-image"></div>
+        <nav>
+            <a href="index.html">&lt;home&gt;</a>
+            <a class="learn-dropdown" href="index.html#learn">&lt;learn&gt;</a> 
+            <div class="learn-submenu">
+                <a href="automotive.html">&lt;Automotive&gt;</a>
+                <a href="e-commerce.html">&lt;E-commerce&gt;</a>
+                <a href="healthcare.html">&lt;Healthcare&gt;</a>
+            </div>
+            <a href="future.html">&lt;the-future&gt;</a> 
+            <a href="contact-us.html">&lt;contact-us&gt;</a> 
+        </nav>
+        <div class="contact-us">
+            <h1>Thank you for your submission</h1>
+            <p>
+                You have chosen <span id="solutionDisplay"></span> for your solution. <br>
+                We will contact you in 3-5 business days.
+            </p>
+        </div>
+        <script>
+            function getQueryParam(param) {
+                var queryString = window.location.search.substring(1);
+                var params = queryString.split('&');
+                for (var i = 0; i < params.length; i++) {
+                    var pair = params[i].split('=');
+                    if (pair[0] === param) {
+                        return decodeURIComponent(pair[1]);
+                    }
+                }
+                return null;
+            }
+
+            window.onload = function() {
+                var solution = getQueryParam('solution');
+                if (solution) {
+                    document.getElementById('solutionDisplay').textContent = solution;
+                }
+            };
+        </script>
+    </body>
+    <footer>
+        <hr>
+        <p>Created By G1THUB</p>
+        <p>ITFS C004 - Web Programming Fundamentals</p>
+        <p>CA3 Group Assignment</p>
+        <p>Oct 2023 Semester</p>
+    </footer>
+</html>
