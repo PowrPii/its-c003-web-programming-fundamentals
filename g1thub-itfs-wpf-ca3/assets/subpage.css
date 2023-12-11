@@ -72,12 +72,17 @@ nav .learn-submenu:hover {
     background-color: #0c0c0f;
     margin: 0 30px;
     width: 90vw;
-    height: 70vh;
+    height: auto;
     padding: 10px 50px;
 }
 
 .contact-us h1 {
     font-size: 50px;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 40px;
 }
 
 .contact-us p {
@@ -91,6 +96,11 @@ hr {
     height: 1px;
     background-color: rgb(31, 230, 77);
     border: 0;
+}
+
+.read-more a {
+    text-decoration: underline;
+    color: rgb(31, 230, 77);
 }
 
 footer {
