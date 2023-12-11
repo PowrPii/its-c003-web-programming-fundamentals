@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Practice</title>
+        <style>
+            code {
+                color: blue;
+            }
+
+            .code-block {
+                border: 1px black solid;
+                width: 97vw;
+                padding: 10px;
+            }
+
+            .code-block code {
+                color: green;
+            }
+
+            p {
+                font-weight: 900;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Javascript</h1>
+        <hr>
+
+        <h2>Returning <code>z</code> variable</h2>
+        <div class="code-block">
+            <code>
+                var x = 10; <br>
+                var y = 5; <br>
+                var z = x * y; <br>
+                <br>
+                document.getElementById("z").textContent = z;
+            </code>
+        </div>
+        <p id="z"></p>
+        <hr>
+
+        <h2>Returning <code>myName</code> variable</h2>
+        <div class="code-block">
+            <code>
+                var myName = "Fifa"; <br>
+                <br>
+                document.getElementById("myName").textContent = myName;
+            </code>
+        </div>
+        <p id="myName"></p>
+        <hr>
+
+        <h2>Returning <code>num3</code> variable</h2>
+        <div class="code-block">
+            <code>
+                var num1 = "5"; <br>
+                var num2 = 6; <br>
+                var num3 = num1 + num2; <br>
+                <br>
+                document.getElementById("num3").textContent = num3;
+            </code>
+        </div>
+        <p id="num3"></p>
+        <hr>
+
+        <h2>Returning <code>printHello()</code> function</h2>
+        <div class="code-block">
+            <code>
+                function printHello() { <br>
+                &emsp;document.getElementById("printHello").innerHTML += "Hello&lt;br&gt;"; <br>
+                } <br>
+                <br>
+                printHello(); <br>
+                printHello();
+            </code>
+        </div>
+        <p id="printHello"></p>
+        <hr>
+
+        <h2>Returning <code>greet()</code> function</h2>
+        <div class="code-block">
+            <code>
+                function greet(name) { <br>
+                &emsp;document.getElementById("greet").innerHTML += `Hello, ${name}!`; <br>
+                } <br>
+                <br>
+                greet("Fifa");
+            </code>
+        </div>
+        <p id="greet"></p>
+        <hr>
+
+        <h2>Returning <code>calcArea()</code> function</h2>
+        <div class="code-block">
+            <code>
+                function calcArea(n1, n2) { <br>
+                &emsp;document.getElementById("calcArea").innerHTML += `Area is ${n1 * n2} u&lt;sup&gt;&lt;small&gt;2&lt;/small&gt;&lt;/sup&gt;`; <br>
+                } <br>
+                <br>
+                calcArea(4, 5);
+            </code>
+        </div>
+        <p id="area"></p>
+        <hr>
+
+        <h2>Returning <code>mark</code> using if-else statement</h2>
+        <div class="code-block">
+            <code>
+                var mark = 60; <br>
+                <br>
+                if (mark >= 50) { <br>
+                &emsp;document.getElementById("mark").textContent = "You passed!"; <br>
+                } <br>
+                else { <br>
+                &emsp;document.getElementById("mark").textContent = "You failed!"; <br>
+                } <br>
+            </code>
+        </div>
+        <p id="mark"></p>
+        <hr>
+
+        <h2>Returning <code>choice</code> using else-if statement</h2>
+        <div class="code-block">
+            <code>
+                choice = "beef" <br>
+                <br>
+                if (choice == "chicken") {
+                &emsp;document.getElementById("choice").textContent = "You get chicken rice";
+                } <br>
+                else if (choice == "beef") {
+                &emsp;document.getElementById("choice").textContent = "You get beef noodles"; <br>
+                } <br>
+                else if (choice == "fish") {
+                &emsp;document.getElementById("choice").textContent = "You get fish soup"; <br>
+                } <br>
+                else if (choice == "mutton") { <br>
+                &emsp;document.getElementById("choice").textContent = "You get mutton curry";<br>
+                } <br>
+                else { <br>
+                &emsp;document.getElementById("case-choice").textContent = "You get vegetarian"; <br>
+                } <br>
+            </code>
+        </div>
+        <p id="choice"></p>
+        <hr>
+
+        <h2>Returning <code>graduation</code> variable using AND operator</h2>
+        <div class="code-block">
+            <code>
+                var maths = 60; <br>
+                var science = 35; <br>
+                <br>
+                if (math >= 50 && science >= 50) { <br>
+                &emsp;document.getElementById("graduation").textContent = "You can graduate!"; <br>
+                } <br>
+                else { <br>
+                &emsp;document.getElementById("graduation").textContent = "You cannot graduate..."; <br>
+            } <br>
+            </code>
+        </div>
+        <p id="graduation"></p>
+        <hr>
+
+        <h2>Returning <code>case-choice</code> variable using switch-case function</h2>
+        <div class="code-block">
+            <code>
+                var case_choice = "chicken" <br>
+                <br>
+                switch(case_choice) { <br>
+                &emsp;case "chicken": <br>
+                &emsp;&emsp;document.getElementById("case-choice").textContent = "You get chicken rice"; <br>
+                &emsp;&emsp;break; <br>
+                &emsp;case "beef": <br>
+                &emsp;&emsp;document.getElementById("case-choice").textContent = "You get beef noodles"; <br>
+                &emsp;&emsp;break; <br>
+                &emsp;case "fish": <br>
+                &emsp;&emsp;document.getElementById("case-choice").textContent = "You get fish soup"; <br>
+                &emsp;&emsp;break; <br>
+                &emsp;case "mutton": <br>
+                &emsp;&emsp;document.getElementById("case-choice").textContent = "You get mutton curry"; <br>
+                &emsp;&emsp;break; <br>
+                &emsp;default: <br>
+                &emsp;&emsp;document.getElementById("case-choice").textContent = "You get vegetarian"; <br>
+                } <br>
+            </code>
+        </div>
+        <p id="case-choice"></p>
+        <hr>
+
+        <h2>Returning <code>for-loop</code> variable using FOR loop</h2>
+        <div class="code-block">
+            <code>
+                for (var i = 0; i &lt; 10; i++) { <br>
+                &emsp;document.getElementById("for-loop").innerHTML += `Hello ${i}&lt;br&gt;`; <br>
+                } <br>
+            </code>
+        </div>
+        <p id="for-loop"></p>
+        <hr>
+
+        <h2>Returning <code>while-loop</code> variable using WHILE loop</h2>
+        <div class="code-block">
+            <code>
+                var count = 0; <br>
+                <br>
+                for (count &lt; 100) { <br>
+                &emsp;document.getElementById("while-loop").innerHTML += `Hello ${count}&lt;br&gt;`; <br>
+                &emsp;count = (count + 1) * 2; <br>
+                } <br>
+            </code>
+        </div>
+        <p id="while-loop"></p>
+        <hr>
+
+        <script src="script.js"></script>
+    </body>
+</html>
