@@ -114,3 +114,95 @@ footer:hover {
     color: rgb(31, 230, 77);
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        max-width: 430px;
+        background-color: black;
+        font-family: monospace;
+        color: white;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .cyborg-image {
+        top: 28vh;
+    }
+
+    nav { 
+        overflow: hidden;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    nav a {
+        width: 100%;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        text-align: left;
+        margin-left: 5px;
+    }
+
+    nav .learn-submenu {
+        visibility: visible;
+        text-align: right;
+        top: -40px;
+        visibility: visible;
+        left: 36vw;        
+    }
+    nav .learn-submenu a {
+        font-size: 20px;
+        margin: 0;
+        max-width: 30%;
+        text-align: right;
+    }
+
+    
+    nav a:hover {
+        transition: 0.5s;
+        color: rgb(31, 230, 77);
+    }
+    
+    nav .learn-dropdown:hover + .learn-submenu {
+        visibility: visible;
+    }
+    
+    nav .learn-submenu:hover {
+        visibility: visible;
+    }
+
+    .contact-us {
+        background-color: #0c0c0f;
+        min-width: 300px;
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 2px;
+    }
+
+    .contact-us h1 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .contact-us p {
+        font-size: 10px;
+        
+    }
+
+    .contact-us {
+        height: 64vh;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
