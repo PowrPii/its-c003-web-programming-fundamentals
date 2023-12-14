@@ -28,7 +28,8 @@ nav {
     justify-content: space-between;
     text-align: center;
     top: 0;
-    z-index: 1;
+    z-index: 3;
+    position: relative;
 }
 
 nav a {
@@ -68,6 +69,24 @@ nav .learn-submenu:hover {
     visibility: visible;
 }
 
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img {
+    filter: opacity(35%) grayscale(100%);
+    width: 100vh;
+    height: 100vh;
+    position: absolute;
+    top: 3.5%;
+    left: 36%;
+    z-index: 0;
+
+}
+
 .contact-us {
     background-color: #0c0c0f;
     margin: 0 30px;
@@ -77,19 +96,29 @@ nav .learn-submenu:hover {
 }
 
 .contact-us h1 {
-    font-size: 50px;
-    text-align: center;
+    font-size: 100px;
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #0fa,
+        0 0 20px #0fc,
+        0 0 50px #0fe,
+        0 0 100px #0ff;
+
+    animation: animate 4s infinite alternate;
 }
 
-.contact-us h2 {
+h2 {
     font-size: 40px;
 }
 
-.contact-us p {
+p {
+    position: relative;
     margin: 30px;
     font-size: 30px;
     text-align: justify;
     text-justify: inter-word;
+    z-index: 2;
 }
 
 hr {
@@ -101,15 +130,17 @@ hr {
 .read-more a {
     text-decoration: underline;
     color: rgb(31, 230, 77);
+    overflow-wrap: break-word;
 }
 
 footer {
     height: 50px;
-    text-align: center;
+    text-align: right;
     margin: 20px 10px 60px;
 }
 
 footer p {
+    text-align: center;
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -118,5 +149,44 @@ footer p {
 footer:hover {
     transition: 0.5s;
     color: rgb(31, 230, 77);
+}
+
+@keyframes animate {
+    12%{
+        opacity: 0.9;
+    }
+    14%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.8;
+    }
+    27%{
+        opacity: 1;
+    }
+    42%{
+        opacity: 0.8;
+    }
+    44%{
+        opacity: 1;
+    }
+    45%{
+        opacity: 0.5;
+    }
+    47%{
+        opacity: 1;
+    }
+    48%{
+        opacity: 0.3;
+    }
+    49%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0.7;
+    }
+    92%{
+        opacity: 1;
+    }
 }
 
